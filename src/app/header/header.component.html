@@ -1,0 +1,47 @@
+<header>
+    <mat-toolbar class="navbar" color="primary">
+        <a href="#" class="sava">
+            <img src="assets/img/logofinal1.png" alt="logoverduleria" class="logo_verdu" width="682" height="260">
+        </a>
+        <div class="spacer"></div>
+
+        <nav class="navbar1">
+
+            <ng-container *ngIf="isAuthenticated">
+                <span>ponganle css USER: {{ username }}</span>
+            </ng-container>
+
+
+            <a class="options" mat-stroked-button routerLink="inicio">Tienda</a>
+            <a class="options" mat-stroked-button routerLink="frutas">Frutas</a>
+            <a class="options" mat-stroked-button routerLink="verduras">Verduras</a>
+        </nav>
+
+        <nav class="navbar2">
+            <a class="options" mat-stroked-button routerLink="carrito">Carrito</a>
+            <ng-container *ngIf="!isAuthenticated; else logoutButton">
+            <a class="ingresar" mat-raised-button color="primary" routerLink="ingreso">Ingresar</a>
+            </ng-container>
+            <ng-template #logoutButton>
+            <button class="ingresar" mat-raised-button color="primary" (click)="onLogout()">Cerrar sesión</button>
+            </ng-template>
+        </nav>
+
+    </mat-toolbar>
+</header>
+
+<!-- <header class="header">
+    <img src="assets/img/logofinal1.png" alt="logoverduleria" class="logo_verdu" width="682" height="260">
+</header> -->
+<!-- <div class="menu">
+    <nav class="menu_ul">
+        <ul>
+            <li><a class="ai" href="#">Inicio</a></li>
+            <li><a class="ai" href="#">Tienda</a></li>
+            <li><a class="ai" href="#">Contacto</a></li>
+            <li><a class="ai" href="#">Carrito</a></li>
+            <li class="right"><a href="#">Iniciar Sesion</a></li>
+            <li class="right"><a href="#">Registrarse</a></li>
+        </ul>
+    </nav>
+</div> -->

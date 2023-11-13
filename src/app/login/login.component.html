@@ -1,0 +1,26 @@
+<body>
+  <form class="form" (ngSubmit)="login()">
+    <h2 class="form_title">Iniciar sesion</h2>
+
+    <div class="form_container">
+      <div class="form_group">
+        <input class="form_input" type="text" id="username" [(ngModel)]="username" name="username" placeholder=" " required>
+        <label class="form_label" for="username">Usuario</label>
+        <span class="form_line"></span>
+        <div *ngIf="usernameError" class="text-danger">Por favor, completa este campo.</div>
+      </div>
+
+      <div class="form_group">
+        <input class="form_input" type="password" id="password" [(ngModel)]="password" name="password" placeholder=" " required>
+        <label class="form_label" for="password">Contraseña</label>
+        <span class="form_line"></span>
+        <div *ngIf="passwordError" class="text-danger">Por favor, completa este campo.</div>
+      </div>
+
+      <input type="submit" class="form_submit" value="Iniciar sesión">
+      <p class="form_paragraph">Si no tienes una cuenta <a class="form_link" routerLink="/registro">haz clic aqui</a></p>
+    </div>
+
+      
+  </form>
+</body>

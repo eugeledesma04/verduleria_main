@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: .1rem;
+}
+h1 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  background-color: rgba(49, 138, 19, 0.649);
+  margin: 0;
+  font-size: 54px;
+}
+
+.container {
+  background-size: auto;
+  background-color:white;
+}
+
+h2 {
+    color: rgba(49, 138, 19, 0.649);
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    padding: 3px;
+    margin-top: 0;
+}

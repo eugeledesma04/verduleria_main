@@ -1,0 +1,28 @@
+<body>
+  <section class="cuadrado">
+    <div class="wrap-carrito">
+      <h3 class="title"><i class="fa fa-shopping-cart"></i>Carrito</h3>
+    </div>
+    <hr>
+    <div class="grid">
+      <article *ngFor="let mercaderia of carrito; let i = index">
+        <span><img class="mini-image" [src]="mercaderia.image" alt=""></span>
+        <span>{{ mercaderia.titulo }}</span>
+        <span>{{ mercaderia.subtitulo }}</span>
+        <span>{{ mercaderia.peso }}</span>
+        <span>{{ mercaderia.precioSubtotal }}</span>
+        <i (click)="eliminarMercaderia(i)" style="color: #ff0000;" class="trash"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-trash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M4 7l16 0"></path>
+          <path d="M10 11l0 6"></path>
+          <path d="M14 11l0 6"></path>
+          <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+          <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+       </svg></i>
+      </article>
+    </div>
+    <div class="precios">
+        <p class="precio-final">Precio total: <span class="total">${{ precioTotal }}</span></p>
+    </div>
+  </section>
+</body>

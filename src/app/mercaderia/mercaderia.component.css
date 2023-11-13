@@ -1,0 +1,73 @@
+.card{
+    min-width: 100px;
+    max-width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 4px;
+    padding: 10px 20px 15px 20px;
+    box-shadow: 2px 2px 2px 0.2px rgb(219, 217, 217);
+}
+
+hr {
+    opacity: 0.2;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    object-fit: contain;
+}
+
+.carrito {
+    background-color: #71ac2d;
+    border: none;
+    color: #fff;
+    display: flex;
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+
+    align-items: center;
+    margin: 0 auto;
+    padding-left:1px;
+    padding-right: 10px;
+
+    border-radius: 4px;
+    transition: 0.34s;
+    
+}
+
+.carrito i {
+    margin: auto;
+}
+
+.carrito:hover {
+    background-color: #587c2f;
+}
+
+.title{
+    text-align:center;
+    font-family: 'Rubik', sans-serif;
+}
+.peso {
+    text-align:center;
+}
+
+.peso-input {
+    height: 15px;
+}
+
+
+.sub-title{
+    text-align:center;
+    font-size: 13px;
+    padding-bottom: 9px;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+}
+
+

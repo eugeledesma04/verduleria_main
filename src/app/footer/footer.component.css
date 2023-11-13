@@ -1,0 +1,41 @@
+.footer-section{
+  margin: 0 auto;
+  background-color: #71ac2d;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto {
+  margin-left: 15px;
+  color: white;
+  width: 19%;
+}
+
+.asd {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-top: -10px;
+}
+
+svg {
+  margin-right: 7px;
+}
+
+h3 {
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  margin-bottom: 18px;
+}
+
+p {
+  display: inline;
+}
+
+.footer-creds{
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+

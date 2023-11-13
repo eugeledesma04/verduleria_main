@@ -1,0 +1,56 @@
+<body>
+  <form class="form" (ngSubmit)="register($event)">
+    <h2 class="form_title">¡Registrate!</h2>
+
+    <div class="form_container">
+
+      <div class="form_group">
+        <input class="form_input" type="text" id="firstname" [(ngModel)]="firstname" name="firstname" placeholder=" "
+          required>
+        <label class="form_label" for="firstname">Nombre</label>
+        <span class="form_line"></span>
+        <div *ngIf="firstnameError" class="text-danger">Por favor, completa este campo.</div>
+      </div>
+
+      <div class="form_group">
+        <input class="form_input" type="email" id="email" [(ngModel)]="email" name="email" placeholder=" " required>
+        <label class="form_label" for="email">Email</label>
+        <span class="form_line"></span>
+        <div *ngIf="emailError" class="text-danger">Por favor, completa este campo.</div>
+      </div>
+
+      <div class="form_group">
+        <input class="form_input" type="text" id="lastname" [(ngModel)]="lastname" name="lastname" placeholder=" "
+          required>
+        <label class="form_label" for="lastname">Apellido</label>
+        <span class="form_line"></span>
+        <div *ngIf="lastnameError" class="text-danger">Por favor, completa este campo.</div>
+      </div>
+
+<div class="form_group">
+        <input class="form_input" type="password" id="password" [(ngModel)]="password" name="password" placeholder=" "
+          required>
+        <label class="form_label" for="password">Contraseña</label>
+        <span class="form_line"></span>
+        <div *ngIf="passwordError" class="text-danger">Por favor, completa este campo.</div>
+      </div>
+
+      <div class="form_group">
+        <input class="form_input" type="text" id="username" [(ngModel)]="username" name="username" placeholder=" "
+          required>
+        <label class="form_label" for="username">Usuario</label>
+        <span class="form_line"></span>
+        <div *ngIf="usernameError" class="text-danger">Por favor, completa este campo.</div>
+      </div>
+
+      
+
+      <!--<input type="submit" class="form_submit" value="Registrarse"> 
+      <p class="form_paragraph">Si ya tenes una cuenta <a class="form_link" routerLink="/ingreso">haz clic aqui</a></p>-->
+    </div>
+    <div class="last">
+      <input type="submit" class="form_submit" value="Registrarse">
+      <p class="form_paragraph">Si ya tenes una cuenta <a class="form_link" routerLink="/ingreso">haz clic aqui</a></p>
+    </div>
+  </form>
+</body>

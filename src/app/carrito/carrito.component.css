@@ -1,0 +1,75 @@
+:host {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: block;
+}
+
+.cuadrado {
+  border: 1px solid rgb(0, 0, 0, 0.4);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px -5px rgb(0 0 0 / 30%);
+  margin-top: 20px;
+}
+
+.wrap-carrito {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 1rem;
+}
+
+.mini-image {
+  width: 5rem;
+
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(6, 10fr);
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+
+  border-bottom: 1px solid #ddd;
+  font-size: 0.9em;
+  padding: 3px;
+  height: 90px;
+}
+
+span {
+  display: inline-block;
+  width: 22%;
+  margin-right: 2%;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+i { /*Icono carrito*/
+  font-size: 30px;
+  margin-right: 8px;
+}
+
+.precios {
+  position: absolute;
+  margin-left: 8px;
+  right: 100px;
+}
+
+.precio-total {
+  margin-left: 12px;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.trash {
+  position: relative;
+  margin-right: 8px;
+  cursor: pointer;
+}
