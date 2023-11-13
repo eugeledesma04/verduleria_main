@@ -14,11 +14,11 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { FrutasComponent } from './frutas/frutas.component';
 import { VerdurasComponent } from './verduras/verduras.component';
-import { ContactoComponent } from './contacto/contacto.component';
+
 import { HomeComponent } from './home/home.component';
 import { AuthService } from './auth.service';
 import { HttpClientModule } from '@angular/common/http';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FooterComponent } from './footer/footer.component';
@@ -33,11 +33,11 @@ import { FooterComponent } from './footer/footer.component';
     InicioComponent,
     FrutasComponent,
     VerdurasComponent,
-    ContactoComponent,
+    
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent,
+    
     FooterComponent,
   ],
   imports: [
