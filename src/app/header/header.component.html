@@ -8,7 +8,7 @@
         <nav class="navbar1">
 
             <ng-container *ngIf="isAuthenticated">
-                <span>ponganle css USER: {{ username }}</span>
+                <span> USER: {{ username }}</span>
             </ng-container>
 
 
@@ -26,6 +26,8 @@
             <button class="ingresar" mat-raised-button color="primary" (click)="onLogout()">Cerrar sesión</button>
             </ng-template>
         </nav>
+
+        
 
     </mat-toolbar>
 </header>
